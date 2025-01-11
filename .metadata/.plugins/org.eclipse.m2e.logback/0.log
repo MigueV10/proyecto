@@ -1,0 +1,113 @@
+2025-01-10 21:36:40,889 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-01-10 21:40:17,788 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-01-10 21:48:47,890 [Worker-25: Creating project "prueba1"] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.coderhouse:prueba1:0.0.1-SNAPSHOT @ C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\prueba1\pom.xml.
+2025-01-10 21:48:48,761 [Worker-25: Creating project "prueba1"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /prueba1/src/main/java
+2025-01-10 21:48:48,765 [Worker-25: Creating project "prueba1"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /prueba1/src/main/resources
+2025-01-10 21:48:48,766 [Worker-25: Creating project "prueba1"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /prueba1/src/test/java
+2025-01-10 21:48:48,768 [Worker-25: Creating project "prueba1"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /prueba1/src/test/resources
+2025-01-10 21:48:49,845 [Worker-27: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-01-10 21:48:49,852 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 21:48:49,857 [Worker-27: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-01-10 21:48:49,858 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-10 21:56:19,174 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-01-10 21:56:19,180 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 21:56:19,188 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-01-10 21:56:19,191 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-10 22:11:01,487 [Worker-30: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.coderhouse:facturacion:0.0.1-SNAPSHOT @ C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\pom.xml.
+2025-01-10 22:11:02,904 [Worker-30: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /facturacion/src/main/java
+2025-01-10 22:11:02,905 [Worker-30: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /facturacion/src/main/resources
+2025-01-10 22:11:02,913 [Worker-30: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /facturacion/src/main/resources
+2025-01-10 22:11:02,920 [Worker-30: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /facturacion/src/test/java
+2025-01-10 22:11:02,921 [Worker-30: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /facturacion/src/test/resources
+2025-01-10 22:11:03,367 [Worker-30: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 2 sec
+2025-01-10 22:11:03,372 [Worker-30: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-01-10 22:11:04,145 [Worker-30: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.coderhouse:facturacion:0.0.1-SNAPSHOT @ C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\pom.xml.
+2025-01-10 22:11:05,317 [Worker-30: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /facturacion/src/main/java
+2025-01-10 22:11:05,319 [Worker-30: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /facturacion/src/main/resources
+2025-01-10 22:11:05,321 [Worker-30: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /facturacion/src/main/resources
+2025-01-10 22:11:05,322 [Worker-30: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /facturacion/src/test/java
+2025-01-10 22:11:05,323 [Worker-30: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /facturacion/src/test/resources
+2025-01-10 22:11:06,038 [Worker-30: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 1.00 sec, update config takes 0.00 sec 
+2025-01-10 22:11:06,990 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 22:11:07,058 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:11:07,068 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:19:42,985 [Worker-41: Launching facturacion - FacturacionApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 22:19:42,999 [Worker-41: Launching facturacion - FacturacionApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:19:43,005 [Worker-41: Launching facturacion - FacturacionApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:22:20,278 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-core:jar:6.4.4.Final has been relocated to org.hibernate.orm:hibernate-core:jar:6.4.4.Final
+2025-01-10 22:22:20,447 [Worker-46: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:proyect:0.0.1-SNAPSHOT @ C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\pom.xml.
+2025-01-10 22:22:20,462 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-core:jar:6.4.4.Final has been relocated to org.hibernate.orm:hibernate-core:jar:6.4.4.Final
+2025-01-10 22:22:20,932 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:22:20,933 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:22:20,938 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:22:21,630 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 22:22:21,652 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:22:21,659 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:22:53,188 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 22:22:53,198 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:22:53,202 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:23:27,938 [Worker-49: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-core:jar:6.4.4.Final has been relocated to org.hibernate.orm:hibernate-core:jar:6.4.4.Final
+2025-01-10 22:23:28,085 [Worker-49: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:facturacion:0.0.1-SNAPSHOT @ C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\pom.xml.
+2025-01-10 22:23:28,095 [Worker-49: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-core:jar:6.4.4.Final has been relocated to org.hibernate.orm:hibernate-core:jar:6.4.4.Final
+2025-01-10 22:23:28,517 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:23:28,518 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:23:28,524 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:26:01,385 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 22:26:01,401 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:26:01,406 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:28:46,297 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 22:28:46,309 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:28:46,315 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:29:16,348 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 22:29:16,356 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:29:16,361 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:29:28,367 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 22:29:28,373 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:29:28,377 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:30:47,221 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 22:30:47,229 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:30:47,232 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:31:10,055 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 22:31:10,062 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:31:10,066 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:31:44,295 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 22:31:44,302 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:31:44,305 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:32:02,903 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 22:32:02,912 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:32:02,916 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:33:09,279 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 22:33:09,289 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:33:09,293 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:34:28,849 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 22:34:28,858 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:34:28,863 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:34:42,820 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 22:34:42,827 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:34:42,831 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:35:34,022 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 22:35:34,031 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:35:34,035 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:37:40,088 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 22:37:40,097 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:37:40,101 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 22:37:55,271 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 22:37:55,279 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 22:37:55,284 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 23:03:25,318 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 23:03:25,353 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 23:03:25,358 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 23:04:28,942 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 23:04:28,957 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 23:04:28,960 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 23:37:22,649 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-01-10 23:37:27,540 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-core:jar:6.4.4.Final has been relocated to org.hibernate.orm:hibernate-core:jar:6.4.4.Final
+2025-01-10 23:37:28,337 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-10 23:37:28,366 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 23:37:28,378 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Computadora\OneDrive\Escritorio\Curso-Coder-Java\Proyecto\facturacion\src\test\resources
+2025-01-10 23:37:29,627 [Worker-5: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-01-10 23:37:29,629 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-10 23:37:29,636 [Worker-5: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-01-10 23:37:29,637 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-10 23:38:25,505 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-01-10 23:39:36,655 [Worker-6: Launching facturacion - FacturacionApplication] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-core:jar:6.4.4.Final has been relocated to org.hibernate.orm:hibernate-core:jar:6.4.4.Final
