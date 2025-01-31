@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 
 import org.hibernate.annotations.CreationTimestamp;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -24,32 +25,32 @@ import lombok.ToString;
 @ToString
 @Entity
 @Table(name="clientes")
+@Schema(description = "Modelo de Cliente", title = "Modelo Final de Cliente")
 public class Cliente {
     
-    @Id // Primary KEY
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // AUTOINCREMENTAL
+	@Schema(description = "ID del cliente", requiredMode= Schema.RequiredMode.REQUIRED, example = "1")
+    @Id 
+    @GeneratedValue(strategy = GenerationType.IDENTITY) 
     private Long id;
     
     @Column(name="Nombre")
+    @Schema(description = "Nombre del cliente", requiredMode= Schema.RequiredMode.REQUIRED, example = "Miguel Eduardo")
     private String nombre;
+    @Schema(description = "Apellido del cliente", requiredMode= Schema.RequiredMode.REQUIRED, example = "Urena Nieto")
     private String apellido;
+    @Schema(description = "Email del cliente", requiredMode= Schema.RequiredMode.REQUIRED, example = "miguel109@gmail.com")
     private String email;
     @Column(unique = true, nullable = false)
-//    @Schema(description = "DNI del cliente", requiredMode = Schema.RequiredMode.REQUIRED, example = "30111222")
+    @Schema(description = "INE del cliente", requiredMode = Schema.RequiredMode.REQUIRED, example = "21091112")
     private int ine;
 
     @Column(name = "num_cliente")
-//    @Schema(description = "Numero de cliente", requiredMode = Schema.RequiredMode.REQUIRED, example = "1")
+    @Schema(description = "Numero de cliente", requiredMode = Schema.RequiredMode.REQUIRED, example = "M  1")
     private String numCliente;
 
     @CreationTimestamp
     @Column(name = "fecha_creacion", updatable = false)
-//    @Schema(description = "Fecha de creación del cliente", requiredMode = Schema.RequiredMode.AUTO, example = "2025-01-13T10:21:27.402135")
+    @Schema(description = "Fecha de creación del cliente", requiredMode = Schema.RequiredMode.AUTO, example = "2022-03-13T10:21:27.402135")
     private LocalDateTime createdAt;
-
-//    // Relación OneToMany con la entidad Venta
-//    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
-//    @JsonIgnore
-//    private List<Venta> ventas; // Asegúrate de que exista la clase Venta con el mapeo adecuado
    
 }

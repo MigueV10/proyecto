@@ -18,14 +18,32 @@ import com.coderhouse.dtos.VentaRequestDTO;
 import com.coderhouse.models.Venta;
 import com.coderhouse.services.VentaServices;
 
-@RestController // API REST
-@RequestMapping("/api/ventas")
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
+@Tag(name = "Venta", description = "Manejo de Ventas")
+@RestController 
+@RequestMapping("/api/venta")
 public class VentaController {
 
     @Autowired
     private VentaServices ventaService;
 
-    // Obtener todas las ventas
+    @Operation(summary = "Obtener Lista de Ventas")
+    @ApiResponses(value = {
+    		@ApiResponse(responseCode = "200", description = "Lista de ventas obtenida correctamente",
+    				content = {
+    						@Content(mediaType = "application/json", schema = @Schema(implementation = Venta.class))
+    				}),
+    		@ApiResponse(responseCode = "404", description = "Error al intentar  obtener las ventas",
+    				content = @Content ),
+    		@ApiResponse(responseCode = "500", description = "Error interno del servidor",
+			content = @Content )
+    })
     @GetMapping
     public ResponseEntity<List<Venta>> getAllVentas() {
         try {
@@ -36,46 +54,84 @@ public class VentaController {
         }
     }
 
-    // Buscar una venta por ID
+    @Operation(summary = "Obtener una Venta por su ID")
+    @ApiResponses(value = {
+    		@ApiResponse(responseCode = "205", description = "Venta Obtenida Correctamente",
+    				content = {
+    						@Content(mediaType = "application/json", schema = @Schema(implementation = Venta.class))
+    				}),
+    		@ApiResponse(responseCode = "404", description = "Error al obtener la venta",
+    				content = @Content ),
+    		@ApiResponse(responseCode = "500", description = "Error interno del servidor",
+			content = @Content )
+    })
     @GetMapping("/{id}")
     public ResponseEntity <Venta> getVentaById(@PathVariable Long id) {
         try {
             Venta venta = ventaService.getVentaById(id);
-            return ResponseEntity.ok(venta);//205
+            return ResponseEntity.ok(venta);
         } catch (IllegalArgumentException e) {
-            return ResponseEntity.notFound().build();//404
+            return ResponseEntity.notFound().build();
         } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();//500
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }
 
-    // Crear una nueva venta
+    @Operation(summary = "Creacion de venta correctamente")
+    @ApiResponses(value = {
+    		@ApiResponse(responseCode = "201", description = "Venta Creada Correctamente",
+    				content = {
+    						@Content(mediaType = "application/json", schema = @Schema(implementation = Venta.class))
+    				}),
+    		@ApiResponse(responseCode = "500", description = "Error interno del servidor",
+			content = @Content )
+    })
     @PostMapping
 	public ResponseEntity <Venta> createVenta(@RequestBody VentaRequestDTO ventaRequestDTO) {
 		try {
 			Venta venta = ventaService.createVenta(ventaRequestDTO);
-			return ResponseEntity.ok(venta);//201
+			return ResponseEntity.ok(venta);
 		} catch (IllegalArgumentException e) {
-            return ResponseEntity.notFound().build();//404
+            return ResponseEntity.notFound().build();
 		}catch(Exception e) {
-			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();//500
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
 		}
 	}
 
-    // Eliminar una venta por ID
+    @Operation(summary = "Eliminar UNA Venta por su ID")
+    @ApiResponses(value = {
+    		@ApiResponse(responseCode = "204", description = "Venta Eliminada Correctamente",
+    				content = {
+    						@Content(mediaType = "application/json", schema = @Schema(implementation = Venta.class))
+    				}),
+    		@ApiResponse(responseCode = "404", description = "Error al eliminar la venta",
+    				content = @Content ),
+    		@ApiResponse(responseCode = "500", description = "Error interno del servidor",
+			content = @Content )
+    })
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteVenta(@PathVariable Long id) {
         try {
             ventaService.deleteVenta(id);
-            return ResponseEntity.noContent().build();//400
+            return ResponseEntity.noContent().build();
         } catch (IllegalArgumentException e) {
-            return ResponseEntity.notFound().build();//404
+            return ResponseEntity.notFound().build();
         } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();//500
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }
 
-    // Actualizar una venta existente
+    @Operation(summary = "Actualizacion de venta correctamente por su ID")
+    @ApiResponses(value = {
+    		@ApiResponse(responseCode = "200", description = "Venta Actualizada Correctamente",
+    				content = {
+    						@Content(mediaType = "application/json", schema = @Schema(implementation = Venta.class))
+    				}),
+    		@ApiResponse(responseCode = "404", description = "Error al actualizar la venta",
+    				content = @Content ),
+    		@ApiResponse(responseCode = "500", description = "Error interno del servidor",
+			content = @Content )
+    })
     @PutMapping("/{id}")
     public ResponseEntity<Venta> updateVenta(@PathVariable Long id, @RequestBody Venta ventaDetails) {
         try {
@@ -88,16 +144,4 @@ public class VentaController {
         }
     }
 
-// // Agregar productos a una venta existente
-//    @PostMapping("/agregar-productos")
-//    public ResponseEntity<Venta> agregarProductosAVenta(@RequestBody VentaAgregarProductosDTO dto) {
-//        try {
-//            Venta ventaActualizada = ventaService.agregarProductosAVenta(dto);
-//            return ResponseEntity.ok(ventaActualizada);
-//        } catch (IllegalArgumentException e) {
-//            return ResponseEntity.badRequest().body(null);
-//        } catch (Exception e) {
-//            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
-//        }
-//    }
 }

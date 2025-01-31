@@ -1,13 +1,13 @@
 {
 	"info": {
-		"_postman_id": "0ef9afb3-67df-4d0b-8fa5-dd2ba23ccd79",
-		"name": "Producto",
+		"_postman_id": "58e346db-2ef4-4264-ac28-75986b81db43",
+		"name": "Categoria",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "40991915"
 	},
 	"item": [
 		{
-			"name": "Listar productos",
+			"name": "Listar Categorias por SU ID",
 			"request": {
 				"auth": {
 					"type": "noauth"
@@ -15,7 +15,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/productos",
+					"raw": "http://localhost:8080/api/categoria",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -23,14 +23,14 @@
 					"port": "8080",
 					"path": [
 						"api",
-						"productos"
+						"categoria"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Buscar producto por su ID",
+			"name": "Listar categoria por su ID",
 			"request": {
 				"auth": {
 					"type": "noauth"
@@ -38,7 +38,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/productos/1",
+					"raw": "http://localhost:8080/api/categoria/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -46,7 +46,7 @@
 					"port": "8080",
 					"path": [
 						"api",
-						"productos",
+						"categoria",
 						"1"
 					]
 				}
@@ -54,7 +54,7 @@
 			"response": []
 		},
 		{
-			"name": "Agregar Producto A Categoria",
+			"name": "Crear categoria",
 			"request": {
 				"auth": {
 					"type": "noauth"
@@ -63,7 +63,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"productoId\": 4,\r\n    \"categoriaId\":3\r\n}",
+					"raw": "{\r\n    \"nombre\": \"Pilas\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -71,7 +71,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/productos/asignar-categoria",
+					"raw": "http://localhost:8080/api/categoria",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -79,47 +79,14 @@
 					"port": "8080",
 					"path": [
 						"api",
-						"productos",
-						"asignar-categoria"
+						"categoria"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Crear Producto",
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"titulo\": \"Audifonos SONY\",\r\n  \"descripcion\": \"Inalambricos-Cancelacion Ruido\",\r\n  \"precio\": 999,\r\n  \"stock\": 8\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/api/productos",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"productos"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Actualizar Producto por SU ID",
+			"name": "Actualizar Categoria Por SU ID",
 			"request": {
 				"auth": {
 					"type": "noauth"
@@ -128,7 +95,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"titulo\": \"Monitor LG\",\r\n    \"descripcion\": \"Monitor LG 27 pul\",\r\n    \"precio\": 2900.99,\r\n    \"stock\": 10,\r\n    \"categoria\": {\r\n        \"id\": 1,\r\n        \"nombre\": \"Monitores\"\r\n    }\r\n}",
+					"raw": "{\r\n\r\n    \"nombre\": \"Monitores\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -136,7 +103,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/productos/2",
+					"raw": "http://localhost:8080/api/categoria/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -144,15 +111,15 @@
 					"port": "8080",
 					"path": [
 						"api",
-						"productos",
-						"2"
+						"categoria",
+						"1"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Eliminar Productos por su ID",
+			"name": "Borrar categoria por su ID",
 			"request": {
 				"auth": {
 					"type": "noauth"
@@ -160,7 +127,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/productos/2",
+					"raw": "http://localhost:8080/api/categoria/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -168,8 +135,8 @@
 					"port": "8080",
 					"path": [
 						"api",
-						"productos",
-						"2"
+						"categoria",
+						"1"
 					]
 				}
 			},

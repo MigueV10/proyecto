@@ -20,31 +20,28 @@ public class ProductoServices {
 	private ProductoRepository productoRepository;
     @Autowired
     private CategoriaRepository categoriaRepository;
-//LISTAR PRODUCTOS
+    
+    
 	public List<Producto> getAllProductos(){
         return productoRepository.findAll();
     }
-//BUSCAR PRODUCTO MEDIANTE ID
+
 	public Producto getProductoById(Long id) {
 		return productoRepository.findById(id)
 				.orElseThrow(() -> new IllegalArgumentException("Producto no encontrado"));
 
 	}
-	//GUARDAR PRODUCTO
+
 	 @Transactional
 	    public Producto saveProducto(Producto producto){
 	        return productoRepository.save(producto);
 	    }
-////BUSCAR POR SU ID
-//	public boolean existsById(Long id) {
-//		return productoRepository.existsById(id);
-//	}
-//CREAR PRODUCTO
+
 	@Transactional
 	public Producto createProducto(Producto producto) {
 		return productoRepository.save(producto);
 	}
-//UPDATE PRODUCTO
+
 	@Transactional
     public Producto updateProducto(Long id, Producto productoDetails){
         Producto producto = productoRepository.findById(id)
@@ -60,7 +57,6 @@ public class ProductoServices {
         return productoRepository.save(producto);
     }
 
-//DELETE PRODUCTO
 	 public void deleteProductoById(Long id){
 	        if(productoRepository.existsById(id)){
 	            productoRepository.deleteById(id);

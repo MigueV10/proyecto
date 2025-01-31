@@ -2,6 +2,7 @@ package com.coderhouse.models;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,26 +22,25 @@ import lombok.ToString;
 @AllArgsConstructor
 @Entity
 @Table(name="detalle_venta")
+@Schema(description = "Modelo de Venta-Detalle", title = "Modelo Final del Detalle De Venta")
 public class DetalleVenta {
 
-	@Id // Primary KEY
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // AUTOINCREMENTAL
-//	private int detalleVentaId;
+	@Schema(description = "ID del detelle de venta", requiredMode= Schema.RequiredMode.REQUIRED, example = "1")
+	@Id 
+    @GeneratedValue(strategy = GenerationType.IDENTITY) 
 	private Long id;
 	@JsonBackReference
 	@ManyToOne
 	@JoinColumn(name = "venta_id")
 	private Venta venta;
 	
+	@Schema(description = "Producto generado para su venta por ID", requiredMode= Schema.RequiredMode.REQUIRED, example = "Teclado Mecanico")
 	@ManyToOne
 	@JoinColumn(name="producto_venta_id")
 	private Producto producto;
-	
-	@SuppressWarnings("unused")
+	@Schema(description = "Cantidad en Pesos MXMN", requiredMode= Schema.RequiredMode.REQUIRED, example = "2100")
 	private int cantidad;
-	@SuppressWarnings("unused")
+	@Schema(description = "Precio Unitario", requiredMode= Schema.RequiredMode.REQUIRED, example = "1400.90")
 	private double precioUnitario;
-//	@Column(name="precio",nullable=false)
-//	private double precio;
 	
 }

@@ -31,46 +31,39 @@ public class VentaServices {
     ClienteRepository clienteRepository;
 	  @Autowired
 	  ProductoVentaRepository productoVentaRepository;
-//LISTAR VENTAS
+
 	public List<Venta> getAllVentas(){
 		return ventaRepository.findAll();
 	}
-	//LISTAR VENTAS POR SU ID
+	
 	 public Venta getVentaById(Long id) throws VentaException{
 	        return ventaRepository.findById(id)
 	                .orElseThrow(() -> new VentaException("No se encontró venta con ID: " + id));
 	    }
-	 //CREAR VENTA
 	 @Transactional
 		public Venta createVenta(VentaRequestDTO ventaRequestDTO)throws VentaException {
-		// Valido cliente
 	        Cliente cliente = clienteRepository.findById(ventaRequestDTO.getCliente().getClienteId())
 	                .orElseThrow(() -> new VentaException("Cliente no encontrado con ID: " + ventaRequestDTO.getCliente().getClienteId()));
 
-	        // Crear la venta
 	        Venta venta = new Venta();
 	        venta.setCliente(cliente);
-//	        venta.setFecha(obtenerFechaActual());
 	        venta.setDetalles(new ArrayList<>());
 
 	        double precioTotal = 0;
 	        int cantidadProductos = 0;
 
-	        // Procesar cada línea de la venta
 	        for (VentaRequestDTO.Linea linea : ventaRequestDTO.getLineas()) {
 	            Producto producto = productoRepository.findById(linea.getProducto().getProductoId())
 	                    .orElseThrow(() -> new VentaException("Producto no encontrado con ID: " + linea.getProducto().getProductoId()));
 
-	            // Validar stock
 	            if (producto.getStock() < linea.getCantidad()) {
 	                throw new VentaException("Stock insuficiente para el producto: " + producto.getTitulo());
 	            }
 
-	            // Reducir stock
 	            producto.setStock(producto.getStock() - linea.getCantidad());
 	            productoRepository.save(producto);
 
-	            // Crear una copia del producto en el momento de la venta
+
 	            ProductoVenta productoVenta = new ProductoVenta();
 	            productoVenta.setTitulo(producto.getTitulo());
 	            productoVenta.setDescripcion(producto.getDescripcion());
@@ -80,7 +73,6 @@ public class VentaServices {
 
 	            productoVentaRepository.save(productoVenta);
 
-	            // Crear detalle de venta
 	            DetalleVenta detalle = new DetalleVenta();
 	            detalle.setVenta(venta);
 	            detalle.setProducto(producto);
@@ -89,7 +81,6 @@ public class VentaServices {
 
 	            venta.getDetalles().add(detalle);
 
-	            // Calcular totales
 	            precioTotal += producto.getPrecio() * linea.getCantidad();
 	            cantidadProductos += linea.getCantidad();
 	        }
@@ -99,22 +90,7 @@ public class VentaServices {
 
 	        return ventaRepository.save(venta);
 		}
-//	 
-//	 private LocalDateTime obtenerFechaActual() {
-//	        try {
-//	            String url = "https://timeapi.io/api/Time/current/zone?timeZone=America/Argentina/Buenos_Aires";
-//
-//	            TimeApiResponseDTO responseDTO = restTemplate.getForObject(url, TimeApiResponseDTO.class);
-//	            if (responseDTO != null) {
-//	                return LocalDateTime.parse(responseDTO.getDateTime());
-//	            }
-//	        } catch (Exception e) {
-//	            // Si falla, usar la fecha local
-//	            return LocalDateTime.now();
-//	        }
-//	        return LocalDateTime.now();
-//	    }
-	//ACTUALIZAR VENTAS
+
 	@Transactional
 	public Venta updateVenta(Long id, Venta ventaDetails) {
 		Venta venta = ventaRepository.findById(id)
@@ -123,7 +99,6 @@ public class VentaServices {
 		return ventaRepository.save(venta);
 	}
 	
-	//BORRAR VENTAS
 	public void deleteVenta(Long id) {
 		if (ventaRepository.existsById(id)) {
 			ventaRepository.deleteById(id);

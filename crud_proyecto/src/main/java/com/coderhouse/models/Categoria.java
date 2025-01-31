@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -24,14 +25,17 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "productos")
+@Table(name = "categorias")
 @Entity
+@Schema(description = "Modelo de Categoria", title = "Modelo Final Categorias")
 public class Categoria {
 
+	@Schema(description = "ID de la categoria", requiredMode= Schema.RequiredMode.REQUIRED, example = "1")
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+	@Schema(description = "Nombre de la categoria", requiredMode= Schema.RequiredMode.REQUIRED, example = "Teclados")
     @Column(unique = true, nullable = false)
     private String nombre;
 

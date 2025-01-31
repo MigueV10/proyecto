@@ -15,7 +15,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/clientes",
+					"raw": "http://localhost:8080/api/venta",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -23,7 +23,7 @@
 					"port": "8080",
 					"path": [
 						"api",
-						"clientes"
+						"venta"
 					]
 				}
 			},
@@ -38,7 +38,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/ventas/1",
+					"raw": "http://localhost:8080/api/venta/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -46,7 +46,7 @@
 					"port": "8080",
 					"path": [
 						"api",
-						"ventas",
+						"venta",
 						"1"
 					]
 				}
@@ -63,7 +63,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\r\n    \"cliente\" : {\r\n        \"clienteId\" : 3\r\n    },\r\n    \"lineas\" : [\r\n        {\r\n        \"cantidad\" : 1,\r\n        \"producto\" : {\r\n                \"productoId\" : 4\r\n            }\r\n        },\r\n        {\r\n        \"cantidad\": 2,\r\n        \"producto\": {\r\n        \"productoId\": 4\r\n        }   \r\n      }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -71,7 +71,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/ventas",
+					"raw": "http://localhost:8080/api/venta",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -79,7 +79,31 @@
 					"port": "8080",
 					"path": [
 						"api",
-						"ventas"
+						"venta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Venta Por su ID",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/venta/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"venta",
+						"1"
 					]
 				}
 			},

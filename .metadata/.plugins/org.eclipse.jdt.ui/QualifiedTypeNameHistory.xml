@@ -13,4 +13,5 @@
     <fullyQualifiedTypeName name="jakarta.persistence.Column"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="jakarta.transaction.Transactional"/>
+    <fullyQualifiedTypeName name="io.swagger.v3.oas.annotations.media.Schema.RequiredMode"/>
 </qualifiedTypeNameHistroy>
