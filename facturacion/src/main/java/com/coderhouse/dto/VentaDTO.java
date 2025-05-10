@@ -21,13 +21,5 @@ public class VentaDTO {
     private Integer total;
 	private Long clienteId;
     private List<Long> productosId;
-	public Object getClienteId() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	public List<VentaDTO> getProductosId() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-    
+
 }

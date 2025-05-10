@@ -117,7 +117,7 @@ public class VentaService {
 	        List<Producto> nuevosProductos = dto.getProductosId().stream()
 	        		.map(productoId -> {
 	        			Producto producto = productoRepository.findById((Long)(productoId)
-	    	        			.orElseThrow(() -> new IllegalArgumentException("Producto no encontrado");
+	    	        			.orElseThrow(() -> new IllegalArgumentException("Producto no encontrado")));
 	        			
 	        			if(producto.getStock() <= 0) {
 	    	                throw new IllegalArgumentException("Stock insuficiente");
